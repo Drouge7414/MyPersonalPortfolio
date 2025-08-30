@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--- This is the title of your page
+	  This block also links the style sheet and the favicon 
+	  The Favicon is the little picture that shows up in the tab in the browser
+	  Import your favicons and name the 32x32 fav.32 and the 16 fav16.png
+--->
+<title>My Personal Personal Portfolio</title>
+<link rel="icon" type="image/png" sizes="32x32" href="fav32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="fav16.png">
+<link rel="apple-touch-icon" href="apple.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+	
+<!--- This is the start of the body of the page --->
+	
+<body>
+<header>
+    <div class="profile-pic">
+
+<!--- This is the link to the profile picture make sure that you name your profile picture profile.jpg and place in the root directory --->
+		
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
+
+<!--- This is the title that appears within the actual page feel free to change the text between the <h1> tags --->
+	
+    <div class="content">
+        <h1 class="title">Welcome to my Projects Page</h1>
+
+<!--- This is the navigation section of the page feel free to add or remove any that you like but keep in mind there are only 3 total HTML files in this
+	  templete being index (The home page) projects (The Project page) and certs (The Certificates page) the others are just PDF documents. If you choose to make / add another webpage you have to have another .html file or you will end up with a broken link --->
+	
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+				<li><a href="certs.html">Certifications</a></li>
+				<li><a href="pdf1.pdf">pdf1</a></li> <!--- This links to a pdf in the root directory of the project folder you can change the link name and the nmae displaed on the page --->
+            </ul>
+        </nav>
+
+<!--- This starts the buttons directly bellow the navigation section update this section with the correct coresponding links and ensure to have you resume name resume.pdf in the root directory of the project folder ---> 
+		
+        <div class="top-buttons">
+            <a href="resume.pdf" download><button>Download Resume</button></a>
+            <a href="mailto:youremail.yourdomain.com"><button>Contact Me</button></a>
+            <a href="Your linked in profile link" target="_blank"><button>LinkedIn</button></a>
+            <a href="Your Git hub profile link" target="_blank"><button>GitHub</button></a>
+        </div>
+    </div>
+</header>
+	
+<!--- This starts the body of the page ---> 
+	<div class="future">
+		<h1>Current Projects</h1>
+		</div>
+<section class="projectsBody">
+	
+<!--- Everything wrapped in these comments is a project container copy and paste the whole section for each project container ---> 
+<div class="projects">
+    <button class="collapsible">Name of project</button>
+    <div class="dropdown">
+        <p>Description of project</p>
+        <p><strong>Skills Demonstrated</strong></p>
+        <ul>
+            <li>skill</li>
+            <li>skill</li>
+            <li>skill</li>
+			<li>skill</li>
+        </ul>
+		<p><strong>Technologies Used</strong></p>
+		<ul>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+		</ul>
+    </div>
+</div>
+
+<!--- Everything wrapped in these comments is a project container ---> 
+
+	
+	</section>
+	<div class="completed">
+	<h1>Completed Projects</h1>
+	</div>
+
+<section class="projectsBody">
+	
+<!--- Everything wrapped in these comments is a project container copy and paste the whole section for each project container ---> 
+<div class="projects">
+    <button class="collapsible">Name of project</button>
+    <div class="dropdown">
+        <p>Description of project</p>
+        <p><strong>Skills Demonstrated</strong></p>
+        <ul>
+            <li>skill</li>
+            <li>skill</li>
+            <li>skill</li>
+			<li>skill</li>
+        </ul>
+		<p><strong>Technologies Used</strong></p>
+		<ul>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+			<li>tech</li>
+		</ul>
+    </div>
+</div>
+
+<!--- Everything wrapped in these comments is a project container ---> 
+
+
+<script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+</section>
+	<footer>
+        <p>&copy; 2025 My personal Portfolio</p>
+    </footer>
+</body>
+</html>

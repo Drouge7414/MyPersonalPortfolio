@@ -1,0 +1,468 @@
+
+/* This is where you modify font & background color for the body */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This is where you modify font & background color for the header */
+
+header {
+    background-color: #3F4A62;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 250px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers horizontally */
+    flex-grow: 1;
+    text-align: center;
+}
+
+h1.title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+	border-bottom: 3px solid #FFFFFFF;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* This is where you modify color of the text for the navigation section */
+
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #00BFFF; /* This is where you modify color of the text for the navigation section */
+
+    text-decoration: underline;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between buttons */
+}
+
+.top-buttons button {
+    background-color: #5541B9; /* This is where you modify color of the buttons */
+    color: #ffffff; /* This is where you modify color of the text within the buttons */
+    border: 2px solid #3F4A62;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.top-buttons button:hover {
+    background-color: #3F4A62; /* This is where you modify color of the text for the hovering over the buttons */
+    color: white;
+}
+/* Section Styles */
+section.body {
+    padding: 20px;
+	display: flex;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary{
+	width: 50%;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	
+}
+.certs{
+	width: 50%;
+	 border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 8px 0;
+    color: #333;
+}
+
+section.skills {
+    padding: 20px;
+	display: flex;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pskills{
+	width: 50%;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.tskills{
+	width: 50%;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3F4A62; /* This is where you modify color of footer */
+    color: white; /* This is where you modify color of footer */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* Projects Page*/
+section.projectsBody {
+    padding: 20px;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap to a new line */
+    justify-content: center; /* Centers items on the page */
+    gap: 20px; /* Adds spacing between items */
+    text-align: center;
+    background-color: #f4f4f4; /* This is where you modify the color projects body */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.future{
+	width: 100%;
+	background-color: #3F4A62; /* This is where you modify the color future projects header */
+	color: white;
+	text-align: center;
+	border: #FFFFFF 10px;
+	
+}
+
+.completed{
+	width: 100%;
+	background-color: #3F4A62; /* This is where you modify the color completed projects header */
+	color: white;
+	text-align: center;
+	border: #FFFFFF 10px;
+	
+}
+    .collapsible {
+            background-color: #3F4A62; /* This is where you modify the color the collapsible sections in projects */
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 340px;
+			height: 100px;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+			}
+	.collapsible:hover {
+    	background-color: #0056b3;  /* This is where you modify the color the collapsible sections in projects when hovered over*/
+    	color: white;
+		}
+        .dropdown {
+			height: 500px;
+			width: 500px;
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+			overflow: auto;
+        }
+
+        .active {
+            background-color: #0056b3;
+        }
+		.projects{
+			border: 2px #191C9E;
+			padding: 10px;
+			overflow: auto;
+		}
+   
+/* Certs Page */
+section.certsBody {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to a new line */
+    justify-content: left; /* Centers items on the page */
+    gap: 20px; /* Adds spacing between items */
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certsContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content */
+    justify-content: flex-start;
+    gap: 10px; /* Adds spacing between elements */
+    text-align: center;
+    background-color: #f4f4f4; /* This is where you modify the backgroud color of certificate container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Allow height to adjust dynamically */
+    width: 400px;
+    overflow: hidden;
+}
+
+/* Ensure the image is always on top */
+.certLogo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px auto; /* Center the image with space below */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.certLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps image aspect ratio */
+    border-radius: 5px;
+}
+
+/* Ensure each <p> with <strong> is on its own line */
+.certsContainer p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+}
+
+/* Make sure <strong> text is clear and on its own line */
+.certsContainer p strong {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style the list to fit well within the box */
+.certsContainer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.certsContainer ul li {
+    text-align: left;
+    padding-left: 10px;
+    margin: 3px 0;
+    position: relative;
+}
+
+/* Optional: Add bullets manually */
+.certsContainer ul li::before {
+    content: "• ";
+    color: #3F4A62; /* Bullet color */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    /* Header */
+    header {
+        flex-direction: column;  /* Stack the header content vertically */
+        align-items: center;  /* Center-align content */
+        text-align: center;  /* Center text */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .profile-pic {
+        width: 140px;  /* Resize profile picture for tablets */
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;  /* Stack nav items with spacing */
+    }
+
+    .top-buttons {
+        display: block; /* Stack buttons vertically */
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .top-buttons button {
+        width: 100%;  /* Make buttons full width */
+        margin-bottom: 10px;
+    }
+
+    section.body {
+        padding: 15px;  /* Adjust padding for small screens */
+        flex-direction: column;  /* Stack content vertically */
+        display: flex;  /* Ensure it's a flex container */
+    }
+
+    /* Making sections take full width */
+    .summary,
+    .certs,
+    .pskills,
+    .tskills {
+        width: 100%;  /* Full width on smaller screens */
+        margin-bottom: 20px;  /* Add spacing between sections */
+    }
+
+    /* Adjust skills section */
+    section.skills {
+        padding: 15px;  /* Adjust padding */
+        flex-direction: column; /* Stack items */
+        display: flex;
+        align-items: center;  /* Center align skills items */
+    }
+
+    ul.skills-list {
+        width: 100%;  /* Full width for skills list */
+        text-align: left;  /* Align text to the left for readability */
+    }
+
+    ul.skills-list li {
+        margin-bottom: 10px;  /* Add spacing between skills */
+    }
+}
+ 
+
+
+/* Mobile Optimizations for Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Profile Picture */
+    .profile-pic {
+        width: 120px;  /* Further reduce profile image size */
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;  /* Smaller header text */
+        margin-bottom: 10px;  /* Reduce space below header */
+    }
+
+    /* Nav Links */
+    nav ul {
+        padding-left: 0;  /* Remove padding */
+        margin-top: 5px;  /* Reduce top margin */
+    }
+
+    nav ul li {
+        font-size: 16px;  /* Smaller font size for nav links */
+        margin: 5px 0;  /* Reduce space between nav items */
+    }
+
+    .top-buttons button {
+        font-size: 12px;  /* Smaller font size for buttons */
+        padding: 8px 10px;  /* Adjust padding */
+        margin-bottom: 8px;  /* Reduce button spacing */
+    }
+
+    section.body {
+        padding: 10px;  /* Reduce padding for very small screens */
+        flex-direction: column;  /* Ensure sections are stacked */
+    }
+
+    /* Adjust content section for mobile */
+    .summary,
+    .certs,
+    .pskills,
+    .tskills {
+        width: 100%;  /* Ensure full width */
+        margin-bottom: 15px;  /* Spacing between sections */
+    }
+
+    /* Skills Section */
+    section.skills {
+        padding: 10px;  /* Adjust padding for small screens */
+        flex-direction: column;  /* Stack skill items */
+        display: flex;  /* Ensure it's a flex container */
+    }
+
+    /* General Text Adjustments */
+    h1, h2, h3 {
+        font-size: 1.2rem;  /* Adjust heading font sizes */
+    }
+
+    ul li {
+        font-size: 1rem;  /* Adjust list item font size */
+        margin: 5px 0;  /* Reduce list item spacing */
+    }
+
+    footer {
+        padding: 10px;  /* Adjust footer padding */
+        font-size: 0.9rem;  /* Adjust footer text size */
+    }
+	 .dropdown {
+			height: 500px;
+			width: 325px;
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+			overflow: auto;
+        }
+}
